@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.db.models import Count
 from django.core.exceptions import ObjectDoesNotExist
-from .models import Student, Instructor, Course, StudentCourse
-from .const_data import view_information
+from models import Student, Instructor, Course, StudentCourse
+from const_data import view_information
 
 
 # <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -61,7 +61,7 @@ def problem_one(request):
   
 
 
-    return complete(request)
+  return complete(request)
 
 
 # Supporting Query Method Documentation:
