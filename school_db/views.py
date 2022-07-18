@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.db.models import Count
 from django.core.exceptions import ObjectDoesNotExist
-from models import Student, Instructor, Course, StudentCourse
-from const_data import view_information
+from .models import Student, Instructor, Course, StudentCourse
+from .const_data import view_information
 
 
 # <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -58,10 +58,10 @@ SELECT `school_db_student`.`id`,
 # Order the data by highest GPAs first (descending).
 # Print out each student's full name and gpa to the terminal
 def problem_one(request):
-  
 
 
-  return complete(request)
+
+    return complete(request)
 
 
 # Supporting Query Method Documentation:
